@@ -8,6 +8,45 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <app-root></app-root>
+  <!-- <app-root></app-root> -->
+  <h1>Formulario salto tiroleza</h1>
+  <form>
+    nome: <input type="text" id="nome" placeholder="digite seu nome completo" 
+    size="50" required pattern="[A-z\s]{6,100}" title="Informe somente letras" ><br><br>
+    email: <input type="email" id="email" placeholder="digite seu email" size="60" required> <br><br>
+    senha: <input type="password" id="senha" placeholder="digite sua senha" 
+    size="20" required pattern="[A-z0-9]{6,30}" > <br><br>
+    idade: <input type="number" id="idade" required min="18" max="65"><br><br>
+    data: <input type="date" id="dataEvento" required> <br><br>
+    horario: <input type="time" id="horarioEvento" required> <br><br>
+    Cor do capacete: <input type="color" id="cor"> <br><br>
+    Altura do salto: <input type="range" id="altura"> <br><br>
+    Concordo com os termos de segurança: <br>
+    <input type="radio" id="opS" name="Termos">Sim
+    <input type="radio" id="opN" name="Termos">Não <br><br>
+    Doença pre existentes:<br>
+    <input type="checkbox" id="d1"> Cardiaco <br>
+    <input type="checkbox" id="d2"> Problema na coluna <br>
+    <input type="checkbox" id="d3"> Desmaios <br>
+    <input type="checkbox" id="d4"> Pressão alta <br>
+    <input type="checkbox" id="d5"> Pinos, placas, proteses <br><br>
+    Local:
+    <select id="local">
+      <option>Campinas</option>
+      <option>Santos</option>
+      <option selected>São Paulo</option>
+      <option>Ribeirão Preto</option>
+    </select><br><br>
+    Testamento:
+    <textarea id="msg" required></textarea> <br><br>
+    Telefone:
+    <input type="text" id="telefone" required 
+    pattern="[0-9]{4,5}-[0-9]{4}" title="Informe no padrão 99999-9999"> <br><br>
+    
+    <input type="file" id="foto" accept="image/*"> <br><br>
+    <input type="reset" value="Limpar"> <br><br>
+
+    <button>Enviar</button>
+  </form>
 </body>
 </html>
