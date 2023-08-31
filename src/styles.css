@@ -1,1 +1,75 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: gray;
+    color: white;
+    font-family: 'Courier New';
+    font-size: 12px;
+}
+
+input, select, textarea {
+    background-color: yellow;
+    color: black;
+    border: solid 1px black;
+    margin: 3px; /* espaçamento externo */
+    padding: 3px; /* espaçamento interno */
+}
+
+label {
+    width: 100px;
+    display: inline-table;
+    text-align: right;
+}
+
+/*seletor por id*/
+#btn1 {
+    width: 20%; 
+    background-color: lime;
+    color: white;
+    border: solid 2px white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/*seletor por apelito / classe*/
+.titulo {
+    color: darkviolet;
+    border-bottom: dotted 5px darkviolet;
+}
+
+.janela {
+    width: 70%;
+    margin-left: 15%;
+    background-color:silver;
+    border: solid 1px white;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 8px 10px #333333;
+}
+
+@media screen and (max-width: 420px) and (min-width: 0px) {
+    body {margin: 0;}
+    .janela {
+        width: 100%;
+        margin-left: 0;
+        background-color:silver;
+        border: solid 0px white;
+        color: black;
+        padding: 2;
+        box-shadow: 0;
+    }
+
+    input, select, textarea {
+        width: 90%;
+        display: block;
+    }
+    label{
+        width: 100%;
+        display: block;
+        text-align: left;
+    }
+    #btn1 {
+        width: 90%;
+        background-color: darkorchid;
+    }
+}
+
