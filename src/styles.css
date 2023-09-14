@@ -1,41 +1,41 @@
-body {
+/* body {
     background-color: gray;
     color: white;
     font-family: 'Courier New';
     font-size: 12px;
-}
+} */
 
-input, select, textarea {
+/* input, select, textarea {
     background-color: yellow;
     color: black;
     border: solid 1px black;
-    margin: 3px; /* espaçamento externo */
-    padding: 3px; /* espaçamento interno */
-}
+    margin: 3px; 
+    padding: 3px; 
+} */
 
-label {
+/* label {
     width: 100px;
     display: inline-table;
     text-align: right;
-}
+} */
 
 /*seletor por id*/
-#btn1 {
+/* #btn1 {
     width: 20%; 
     background-color: lime;
     color: white;
     border: solid 2px white;
     border-radius: 5px;
     padding: 5px;
-}
+} */
 
 /*seletor por apelito / classe*/
-.titulo {
+/* .titulo {
     color: darkviolet;
     border-bottom: dotted 5px darkviolet;
-}
+} */
 
-.janela {
+/* .janela {
     width: 70%;
     margin-left: 15%;
     background-color:silver;
@@ -44,9 +44,9 @@ label {
     padding: 10px;
     border-radius: 5px;
     box-shadow: 10px 10px 8px 10px #333333;
-}
+} */
 
-@media screen and (max-width: 420px) and (min-width: 0px) {
+/* @media screen and (max-width: 420px) and (min-width: 0px) {
     body {margin: 0;}
     .janela {
         width: 100%;
@@ -72,4 +72,4 @@ label {
         background-color: darkorchid;
     }
 }
-
+ */
